@@ -18,7 +18,7 @@ app.use(cors({
 }));
 
 
-cron.schedule('* * * * *', () => {
+cron.schedule('0 0 * * *', () => {
     console.log('Running daily review scraper...');
     scrapeAndSaveReviews();
 });
